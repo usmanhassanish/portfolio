@@ -39,7 +39,7 @@ body
 	margin-right: auto;
 	background-color: red;
 	border: 5px solid grey;
-	background-image: url('images/two.jpg');
+	background-image: url('images/three.jpg');
 
     background-size: cover; 
 }
