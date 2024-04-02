@@ -7,9 +7,9 @@ body
 {
 	/*background-color: #F08080;*/
 	/*background-color: #F0FFFF;*/
-	/*background-color: #1E90FF;*/
-	background-color: #008080;
-	/*background-color: #5499C7;*/
+	/*background-color: #008080;*/
+	font-family: Georgia, serif;
+	background-color: #5499C7;
 }
 .name-place
 {
@@ -55,7 +55,7 @@ body
 	top: 40px;
 	left: 50%;
     transform: translateX(-50%);
-	width: 25%;
+	width: 28%;
 	height: 90px;
 	border: 2px solid #212F3D;
 
@@ -71,15 +71,71 @@ body
 	padding: 5px;
 }
 #nav-links:hover {
-  background-color: dodgerblue;
+  background-color: #212F3D;
   color: white;
 }
 a{
 	text-decoration: none;
 	color: black;
 }
+.projects
+{
+	border-radius: 5px;
+	margin-top: 15px;
+	width: 95%;
+	background-color: #212F3D;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+}
+#projects
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.project-links
+{
+	width: 60%;
+	height: 120px;
+	margin-top: 15px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: white;
+	border: 2px solid white;
+	border-style: dashed;
+}
 @media (min-width: 801px) {
   .small-screen {
     display: none;
   }
+}
+
+@media (min-width: 200px) and (max-width: 319px) {
+  .name-place
+{
+	width: 85%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	background-color: #212F3D;
+	text-align: center;
+}
+	.hidden
+{
+	display: none;
+	background-color: white;
+	position: absolute;
+	border-radius: 5px;
+	top: 40px;
+	left: 50%;
+    transform: translateX(-50%);
+	width: 35%;
+	height: 90px;
+	border: 2px solid #212F3D;
+
+}
 }
