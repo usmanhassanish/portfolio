@@ -60,6 +60,17 @@
 			color: #d8bfad;
 			text-align: center;
 		}
+		.float
+		{
+			float: left;
+			width: 50%;			
+		}
+		.links
+		{
+			
+			width: 50%;
+			margin-top: 40px;
+			margin-left: 20px;
 	</style>
 </head>
 <body>
@@ -68,11 +79,11 @@
 	</div>
 	<div class="top">
 		<div class="left">
-			<img src="menu.png">
+			<img href="#" id="menu-item" src="menu.png">
 		</div>	
 
 		<div class="mid">
-			<img style="border-radius: 40px;" src="LOGO-MAIN.PNG" height="100%" >
+			<img style="border-radius: 40px;" src="LOGO-MAIN.png" height="100%" >
 		</div>
 
 		<div class="right">
@@ -80,8 +91,22 @@
 		</div>	
 	</div>
 	<div class="what">
-		<img style="margin-top: 50px;" src="edited.PNG" width="84%" height="300px">
+		<img style="margin-top: 50px;" src="edited.png" width="84%" height="300px">
 	</div>
+	 <div class="popup" id="popup">
+    <div class="popup-content">
+      
+      <div class="float"><H1 style="margin-bottom: 30px; margin-left:20px;">HOME</H1></div>
+      <div class="float"><button style="float: right; margin-right: 30px;" class="close-btn" id="close-btn"><img src="close.png"></button></div>
+      <div class="links"><H1>PRODUCTS</H1></div>
+      <div class="links"><H1>ABOUT US</H1></div>
+      <div class="links"><H1>CONTACT</H1></div>
+      <div class="links"><H1>PRIVACY POLICY</H1></div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
