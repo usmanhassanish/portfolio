@@ -11,28 +11,26 @@
 			padding: 0;
 			box-sizing: border-box;
 			font-family: CAMBRIA;
-			text-decoration: none;
 		}
 		@media (min-width:600px)
 		{
-			.nav-small
-			{
-				display: none;
-			}
 			#drop 
 			{
 				display: none;
 			}
-			#who-gwani 
+			.about-small
 			{
-				margin-top: -200px;
-				font-size: 5vh;
+				display: none;
+			}
+			.nav-small
+			{
+				display: none;
 			}
 			.gwani
 			{
 				width: 100%;
 				height: 80vh;
-				background-image: url('gb1.jpg');
+				background-image: url('b6.jpg');
 				background-position: center;
 				background-size: cover;
 				
@@ -47,7 +45,12 @@
 			}
 			#vote-gwani-small
 			{
-				display: none;
+				height: 5vh;
+				background-color: black;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 			#links-small
 			{
@@ -56,7 +59,7 @@
 		}
 		@media (max-width:599px)
 		{
-		#drop
+			#drop
 		{
 			
 			display: none;
@@ -70,26 +73,19 @@
 			font-size: 6vh;
 			font-family: cambria;
 		}
-		hr
-		{
-			width: 60%;
-			margin-left: 20%;
-			border: 2px solid black;
-		}
-			.nav-big
+			.about-big 
 			{
 				display: none;
 			}
-			#who-gwani 
+			.nav-big
 			{
-				margin-top: -80px;
-				font-size: 4vh;
+				display: none;
 			}
 			.gwani
 			{
 				width: 100%;
 				height: 80vh;
-				background-image: url('gs2.jpg');
+				background-image: url('gwani2.jpg');
 				background-position: center;
 				background-size: cover;
 			}
@@ -132,6 +128,12 @@
 			align-items: center;
 			border-bottom: 2px solid whitesmoke;
 		}
+		a 
+		{
+			color: black;
+			text-decoration: none;
+			font-family: trebuchet ms;
+		}
 		.nav-big-left
 		{
 			width: 25%;
@@ -154,11 +156,6 @@
 			font-size: 3vh;
 			border-bottom: 2px solid;
 		}
-		a
-		{
-			color: black;
-			font-family: trebuchet ms;
-		}
 		.nav-big-right
 		{
 			width: 25%;
@@ -168,11 +165,6 @@
 			align-items: center;
 			border-bottom: 2px solid;
 			text-align: center;
-		}
-		a 
-		{
-			color: black;
-			text-decoration: none;
 		}
 		.nav-small-right
 		{
@@ -216,7 +208,7 @@
 			border: 2px solid;
 			width: 80%;
 			margin-left: 10%;
-			font-size: 4vh;
+			
 			margin-bottom: 10px;
 			padding: 3px;
 			text-align: center;
@@ -228,7 +220,6 @@
 			margin-left: 3%;
 			margin-right: 2.5%;
 			width: 27%;
-			font-size: 3vh;
 			padding-top: 5px;
 			padding-bottom: 5px;
 			margin-bottom: 5px;
@@ -249,17 +240,97 @@
 			color: black;
 			height: 250px;
 			margin-top: -100px;
-			
 
 		}
-		#who-gwani
+		.project-title
+		{
+			width: 50%;
+			margin-left: 25%;
+			height: 50px;
+			border: 2px solid;
+			margin-top: -25px;
+			background-color: whitesmoke;
+			color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.project-image
+		{
+			width: 100%;
+			height: 150px;
+			border: 2px solid;
+		}
+		.project-spec
 		{
 			width: 80%;
 			margin-left: 10%;
 			text-align: center;
-			
+			border-radius: 20px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			border: 2px solid whitesmoke;
 		}
-		
+		 #pic {
+      max-width: 100vw;
+      max-height: 100vh;
+      border-radius: 15px;
+      height: auto;
+      width: auto;
+    }
+    .heading1-big
+    {
+    	text-align: center;
+    	font-weight: normal;
+    	font-family: tahoma;
+    	margin-top: 10px;
+    	font-size: 5vw;
+    	padding-bottom: 10px;
+    }
+    .heading2-big
+    {
+    	text-align: center;
+    	font-weight: normal;
+    	font-family: georgia;
+    	font-size: 4vw;
+    }
+    .heading1
+    {
+    	text-align: center;
+    	font-weight: normal;
+    	font-family: tahoma;
+    	margin-top: 10px;
+    	font-size: 35px;
+    	padding-bottom: 10px;
+    }
+    .heading2
+    {
+    	text-align: center;
+    	font-weight: normal;
+    	font-family: georgia;
+    	font-size: 22px;
+    }
+    .about-image-big
+    {
+    	float: left;
+    	width: 50%;
+    	background-color: whitesmoke;
+    	border: 10px solid whitesmoke;
+    }
+    .about-text-big
+    {
+    	float: left;
+    	width: 50%;
+    	background-color: whitesmoke;
+
+    	text-align: justify;
+    }
+    hr 
+    {
+    	width: 60%;
+    	margin-left: 20%;
+    	border: 2px solid;
+    }
 	</style>
 </head>
 <body>
@@ -303,29 +374,49 @@
 	<div id="vote-gwani-small">
 			VOTE GWANI FOR BASSA/JOS NORTH 2027
 		</div>
-	<div class="gwani">
-		<div style="height: 15vh;">
-			
+	<div class="about-small">
+		<div class="heading1">
+			MEET GWANI
 		</div>
-		<div id="vote-gwani">
-			VOTE GWANI MOHAMMED ALQADI FOR BASSA/JOS NORTH FEDERAL CONSITUENCY 2027
+		<div class="heading2">
+			Man of the People
+		</div>
+
+		<div style="width:80%;margin-left: 10%;text-align: center;margin-top: 20px;">
+			<img src="gwani4.jpg" height="auto" width="100%">
+		</div>
+
+		<div style="width:80%;margin-left:10%;text-align: justify;">
+			<h2><br>Gwani Mohammed Alqadi is a dedicated community leader, entrepreneur, and advocate for progress, proudly rooted in the heart of Jos. Known for his unwavering commitment to justice, development, and inclusive governance, Mohammed has spent years working at the grassroots level to empower youth, support small businesses, and promote unity across diverse communities.<br><br>
+
+With a vision for a more prosperous and equitable Jos, he brings a fresh, people-centered approach to leadership—one that listens, learns, and leads with integrity. Mohammed believes in practical solutions, transparent governance, and the power of community to drive lasting change.<br><br>
+
+As he steps forward to serve, Mohammed Alqadi stands not as a politician, but as a servant of the people—ready to champion the hopes and needs of every citizen.<br><br></h2>
 		</div>
 	</div>
-	<div id="links-small">
-		<br>
-		<div class="box-links-small"><a href="projects.html">Projects</a></div>
-		<div class="box-links-small"><a href="about.html">About Gwani</a></div>
-		<div class="box-links-small"><a href="joinus.html">Get Involved</a></div>
+
+	<div class="about-big">
+		<div class="heading1-big">
+			MEET GWANI
+		</div>
+		<div class="heading2-big">
+			Man of the People
+		</div>
+
+		<div style="margin-top: 20px;">
+			<div class="about-image-big">
+				<img src="gwani4.jpg" width="100%" height="auto">
+			</div>
+			<div class="about-text-big">
+				<h2 style="width:90%;margin-left: 5%;">Gwani Mohammed Alqadi is a dedicated community leader, entrepreneur, and advocate for progress, proudly rooted in the heart of Jos. Known for his unwavering commitment to justice, development, and inclusive governance, Mohammed has spent years working at the grassroots level to empower youth, support small businesses, and promote unity across diverse communities.<br><br>
+
+With a vision for a more prosperous and equitable Jos, he brings a fresh, people-centered approach to leadership—one that listens, learns, and leads with integrity. Mohammed believes in practical solutions, transparent governance, and the power of community to drive lasting change.<br><br>
+
+As he steps forward to serve, Mohammed Alqadi stands not as a politician, but as a servant of the people—ready to champion the hopes and needs of every citizen.<br><br></h2>
+			</div>
+		</div>
 	</div>
-	<div id="links-big">
-		<br>
-		<div class="box-links-big"><a href="projects.html">Projects</a></div>
-		<div class="box-links-big"><a href="about.html">About Gwani</a></div>
-		<div class="box-links-big"><a href="joinus.html">Get Involved</a></div>
-	</div>
-	<div id="who-gwani">
-		Gwani Muhammad Alqadi is running for office of the member house of representatives for Jos North/Bassa Federal Constituency of Plateau State. He has a lot of experience with problem solving as a philantropist that has touched a lot of lives in and outside Plateau state.
-	</div>
+
 	<div class="socials" style="text-align:center;margin-top: 10px;">
 		<span style="margin-left: 4px;margin-right: 4px;"><img src="insta.png"></span><span style="margin-left: 4px;margin-right: 4px;"><img src="whatsapp.png"></span><span style="margin-left: 4px;margin-right: 4px;"><img src="face.png"></span>
 	</div>

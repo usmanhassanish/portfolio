@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: CAMBRIA;
+		}
+		@media (min-width:600px)
+		{
+			#drop
+			{
+				display: none;
+			}
+			.project-small
+			{
+				display: none;
+			}
+			.nav-small
+			{
+				display: none;
+			}
+			.gwani
+			{
+				width: 100%;
+				height: 80vh;
+				background-image: url('b6.jpg');
+				background-position: center;
+				background-size: cover;
+				
+			}
+			#vote-gwani
+			{
+				width: 50%;
+				font-size: 5VH;
+				text-align: center;
+				background-color: white;
+				padding: 10px;
+			}
+			#vote-gwani-small
+			{
+				height: 5vh;
+				background-color: black;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#links-small
+			{
+				display: none;
+			}
+		}
+		@media (max-width:599px)
+		{
+				#drop
+		{
+			
+			display: none;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.drop-links
+		{
+			font-size: 6vh;
+			font-family: cambria;
+		}
+			.project-big
+			{
+				display: none;
+			}
+			.nav-big
+			{
+				display: none;
+			}
+			.gwani
+			{
+				width: 100%;
+				height: 80vh;
+				background-image: url('gwani2.jpg');
+				background-position: center;
+				background-size: cover;
+			}
+			#vote-gwani
+			{
+				display: none;
+			}
+			#vote-gwani-small
+			{
+				height: 5vh;
+				background-color: black;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#big-break
+			{
+				display: none;
+			}
+			#links-big
+			{
+				display: none;
+			}
+		}
+		.project-small
+		{
+			padding-top: 40px;
+		}
+		.project-big
+		{
+			margin-top: 40px;
+			overflow: auto;
+		}
+		.nav-small
+		{
+			overflow: auto;
+		}
+		.nav-big
+		{
+			overflow: auto;
+		}
+		.nav-small-left
+		{
+			width: 80%;
+			height: 10vh;
+			float: left;
+			display: flex;
+			align-items: center;
+			border-bottom: 2px solid whitesmoke;
+		}
+		.nav-big-left
+		{
+			width: 25%;
+			height: 15vh;
+			float: left;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-bottom: 2px solid;
+		}
+		.nav-big-mid
+		{
+			width: 50%;
+			height: 15vh;
+			float: left;
+			display: flex;
+			justify-content: center;
+			font-family: trebuchet ms;
+			align-items: center;
+			font-size: 3vh;
+			border-bottom: 2px solid;
+		}
+		.nav-big-right
+		{
+			width: 25%;
+			height: 15vh;
+			float: left;
+			display: flex;
+			align-items: center;
+			border-bottom: 2px solid;
+			text-align: center;
+		}
+		.nav-small-right
+		{
+			width: 20%;
+			height: 10vh;
+			float: left;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: whitesmoke;
+		}
+		.logo
+		{
+			border: 2px solid;
+			border-left: none;
+			border-right: none;
+			margin-left: 10px;
+			font-size: 25px;		
+		}
+		.logo-big
+		{
+			border: 2px solid;
+			border-left: none;
+			border-right: none;
+			margin-left: 10px;
+			font-size: 5vh;		
+		}
+		.contribute-big
+		{
+			border: 2px solid black;
+			width: 90%;
+			padding: 10px;
+			font-family: cambria;
+			background-color: black;
+			color: white;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+		hr
+		{
+			border: 2PX solid black;
+			width: 60%;
+			margin-left: 20%;
+		}
+		.box-links-small
+		{
+			border: 2px solid;
+			width: 80%;
+			margin-left: 10%;
+			
+			margin-bottom: 10px;
+			padding: 3px;
+			text-align: center;
+
+		}
+		a 
+		{
+			color: black;
+			text-decoration: none;
+			font-family: trebuchet ms;
+		}
+		.box-links-big
+		{
+			float: left;
+			margin-left: 3%;
+			margin-right: 2.5%;
+			width: 27%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+			text-align: center;
+			border: 2px solid;
+		}
+		#links-small
+		{
+			background-color: whitesmoke;
+			color: black;
+			height: 250px;
+			margin-top: -200px;
+
+		}
+		#links-big
+		{
+			background-color: whitesmoke;
+			color: black;
+			height: 250px;
+			margin-top: -100px;
+
+		}
+		.project-title
+		{
+			width: 50%;
+			margin-left: 25%;
+			height: 50px;
+			border: 2px solid;
+			margin-top: -25px;
+			background-color: whitesmoke;
+			color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.project-image
+		{
+			width: 100%;
+			height: 150px;
+		
+			background-image: url('p7.jpg');
+			background-size: cover;
+			position: center;
+		}
+		
+		
+    .solid-border
+    {
+    	width: 80%;
+    	margin-left: 10%;
+    	padding: 5px;
+    	text-align: center;
+    	border: 2px solid;
+    }
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="nav-small">
+			<div class="nav-small-left">
+				<div class="logo">
+					<a href="index.html">GWANI</a>
+				</div>
+			</div>
+			<div class="nav-small-right">
+				<img id="drop-down" onclick="display()" src="menu.png">
+			</div>
+		</div>
+
+		<div class="nav-big">
+			<div class="nav-big-left">
+				<div class="logo-big">
+					<a href="index.html">GWANI</a>
+				</div>
+			</div>
+			<div class="nav-big-mid">
+					<div style="width: 95%;" class="top-links"><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="projects.html">Projects</a> | <a href="joinus.html">Get Involved</a> </div>
+			</div>
+			<div class="nav-big-right">
+				<div class="contribute-big">
+					<a href="joinus.html" style="color: white; font-family:trebuchet ms">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="drop">
+		<div>
+			<img src="close.png" onclick="lock()"><br>
+		<a class="drop-links" href="index.html">Home</a><hr><br>
+		<a class="drop-links" href="about.html">About</a><hr><br>
+		<a class="drop-links" href="projects.html">Projects</a><hr><br>
+		<a class="drop-links" href="joinus.html">Get Involved</a><hr><br>
+		</div>
+	</div>
+	<div id="vote-gwani-small">
+			VOTE GWANI FOR BASSA/JOS NORTH 2027
+		</div>
+	<div class="project-image">
+		
+	</div>
+	<div class="project-title">
+		<H1>PROJECTS</H1>
+	</div>
+
+	<div class="project-small">
+		<h2 class="solid-border">MARKET INFERNO</h2>
+		<h2 class="solid-border">EX-REP ALKALI DONATES ₦5,000,000 TO TERMINUS MARKET LEADERSHIP FOLLOWING THE DEVASTATING INFERNO THAT ENGULFED THE MARKET</h2>
+		<div style="text-align: center; background-color: whitesmoke;border: 2px dashed black;width: 80%;border-top:none;margin-left: 10%; display: flex;justify-content: center;align-items: center;">
+		<img src="MARKET.jpg" style="width: 100%; height: auto;">
+		</div>
+	</div>
+
+	<div class="project-small">
+		<h2 class="solid-border">SCHOOL PROJECT</h2>
+		<h2 class="solid-border">₦2,000,000 daga wajen Hon. Muhammad Adam Alkali OON domin tallafawa ginin makarantar IBN MAS'UD LITTAH FIZUL QUR'ANI GANGARE JOS assasawar Sheikh Kabiru Cidawa</h2>
+		<div style="text-align: center; background-color: whitesmoke;border: 2px dashed black;width: 80%;border-top:none;margin-left: 10%; ;display: flex;justify-content: center;align-items: center;">
+		<img src="SCHOOL.jpg" style="width: 100%; height: AUTO;">
+		</div>
+	</div>
+
+	<div class="project-small">
+		<h2 class="solid-border">EID</h2>
+		<h2 class="solid-border">EX-REP ALKALI DISBURSES ₦18 MILLION FOR EID El KABIR CELEBRATION HAVING DISTRIBUTED 253 RAMS WORTH OVER ₦70,000,000 FOR SAME SACRED EVENT</h2>
+		<div style="text-align: center; background-color: whitesmoke;border: 2px dashed black;width: 80%;border-top:none;margin-left: 10%; display: flex;justify-content: center;align-items: center;">
+		<img src="EID.jpg" style="width: 100%; height: auto; ">
+		</div>
+	</div>
+	<div class="project-big">
+		
+		
+		<div style="float: left;width: 50%;height: 60vh;border: 2px solid;margin-left: 5%;">
+			<div style="height:15%;border: 2px solid; display: flex;
+			justify-content: center;align-items: center;">
+				<h1>MARKET INFERNO</h1>
+			</div>
+			<div style="height:85%;border: 2px solid; display: flex;
+			justify-content: center;align-items: center; text-align: center; word-break: break-word; overflow-y: scroll;">
+				<h2>EX-REP ALKALI DONATES ₦5,000,000 TO TERMINUS MARKET LEADERSHIP FOLLOWING THE DEVASTATING INFERNO THAT ENGULFED THE MARKET</h2>
+			</div>
+		</div>
+		<div style="float:left;width: 40%;height: 60vh;border: 2px solid; display: flex;
+			justify-content: center;align-items: center;background-color: whitesmoke;">
+			<img src="MARKET.jpg" style="width: 100%; height: 55vh; object-fit: contain;">
+		</div>
+		
+	</div>
+
+	<div class="project-big">
+		
+		
+		<div style="float: left;width: 50%;height: 60vh;border: 2px solid;margin-left: 5%;">
+			<div style="height:15%;border: 2px solid; display: flex;
+			justify-content: center;align-items: center;">
+				<h1>SCHOOL PROJECT</h1>
+			</div>
+			<div style="height:85%;border: 2px solid; display: flex;
+			justify-content: center;align-items: center; text-align: center; word-break: break-word; overflow-y: scroll;">
+				<h2>₦2,000,000 daga wajen Hon. Muhammad Adam Alkali OON domin tallafawa ginin makarantar IBN MAS'UD LITTAH FIZUL QUR'ANI GANGARE JOS assasawar Sheikh Kabiru Cidawa </h2>
+			</div>
+		</div>
+		<div style="float:left;width: 40%;height: 60vh;border: 2px solid; display: flex;
+			justify-content: center;align-items: center;background-color: whitesmoke;">
+			<img src="SCHOOL.jpg" style="width: 100%; height: 55vh; object-fit: contain;">
+		</div>
+		
+	</div>
+
+	<div class="project-big">
+		
+		
+		<div style="float: left;width: 50%;height: 60vh;border: 2px solid;margin-left: 5%;">
+			<div style="height:15%;border: 2px solid; display: flex;
+			justify-content: center;align-items: center;">
+				<h1>EID AL-ADHA</h1>
+			</div>
+			<div style="height:85%;border: 2px solid; display: flex;
+			justify-content: center;align-items: center; text-align: center; word-break: break-word; overflow-y: scroll;">
+				<h2>EX-REP ALKALI DISBURSES ₦18 MILLION FOR EID El KABIR CELEBRATION HAVING DISTRIBUTED 253 RAMS WORTH OVER ₦70,000,000 FOR SAME SACRED EVENT  </h2>
+			</div>
+		</div>
+		<div style="float:left;width: 40%;height: 60vh;border: 2px solid; display: flex;
+			justify-content: center;align-items: center; background-color: whitesmoke;">
+			<img src="EID.jpg" style="width: 100%; height: 55vh; object-fit: contain;">
+		</div>
+		
+	</div>
+
+	<div class="socials" style="text-align:center;margin-top: 10px;">
+		<span style="margin-left: 4px;margin-right: 4px;"><img src="insta.png"></span><span style="margin-left: 4px;margin-right: 4px;"><img src="whatsapp.png"></span><span style="margin-left: 4px;margin-right: 4px;"><img src="face.png"></span>
+	</div>
+	<h3 style="margin-top: 15px;text-align: center;">Copyright © 2025 GWANI. All rights reserved.</h3><br><br>
+	<script type="text/javascript">
+		function display()
+		{
+			document.getElementById('drop').style.display = 'block';
+		}
+		function lock()
+		{
+			document.getElementById('drop').style.display = 'none';
+		}
+	</script>
+	
+</body>
+</html>
