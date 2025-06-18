@@ -12,12 +12,16 @@
 			box-sizing: border-box;
 			background-color: whitesmoke;
 			color: black;
-			font-family: Candara;
+			font-family: trebuchet ms,helvetica,monospace;
 		}
 		
 		@media (min-width: 600px)
 		{
 			.nav-small
+			{
+				display: none;
+			}
+			#message-small
 			{
 				display: none;
 			}
@@ -32,6 +36,14 @@
 		}
 		@media (max-width: 599px)
 		{
+			#no-small
+			{
+				display: none;
+			}
+			#message-big
+			{
+				display: none;
+			}
 			#vision-big 
 			{
 				display: none;
@@ -169,6 +181,19 @@
 		a 
 		{
 			font-size: 4vh;
+			text-decoration: none;
+		}
+		.dropdown
+		{
+			text-align: center;
+		}
+		.dropdown
+		{
+			display: none;
+		}
+		#droplinks
+		{
+			font-size: 10vw;
 		}
 		#project-title
 		{
@@ -214,16 +239,25 @@
 			padding: 3px;
 			font-size: 4vw;
 		}
+		.involved
+		{
+			font-size: 6vh;
+			background-color: white;
+			height: 10vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	</style>
 </head>
 <body>
 	<div class="nav-small">
 		<div class="nav-small-left">
-			<h1 style="margin-left: 5px;">WADA KAWU</h1>
+			<h1 style="margin-left: 5px;"><a href="index.html">WADA KAWU</a></h1>
 		</div>
 
 		<div class="nav-small-right">
-			<img src="MENU.PNG" height="50%">
+			<img id="open-dropdown" onclick="drop()" src="MENU.PNG" height="50%">
 		</div>
 	</div>
 
@@ -238,13 +272,71 @@
 		<a href="contact.html"> Contribute</a>
 		</div>
 	</div>
+	<div id="drop" class="dropdown">
+		<div><img onclick="fold()" src="close.png"></div>
+		<div><a id="droplinks" href="index.html">Home</a></div>
+		<div><a id="droplinks" href="about.html">about</a></div>
+		<div><a id="droplinks" href="projects.html">projects</a></div>
+		<div><a id="droplinks" href="contact.html">contact</a></div>
+	</div>
 	<div style="overflow: auto;">
 		<div id="a"></div>
 		<div id="p"></div>
 		<div id="c"></div>
 	</div>
-	<div id="apc"></div>
 	
+	<div id="apc"></div>
+	<div class="involved">
+		Get Involved
+	</div>
+	<div style="text-align: center;">
+		<h2>JOIN THE MOVEMENT #WADA2027</h2>
+	</div>
+
+	<div id="message-small" style="text-align:center;margin-top: 10px; background-color: white;">
+	<label ><h2>We'd love to hear from you</h2></label><br>
+	<textarea style="width:80%;height: 20vh; border: 3px solid; margin-top: 4px;"></textarea><br>
+	<input style="width: 40%; font-size:4vh;border-radius: 20px;" type="submit" name="send" value="send">
+	</div>
+	<h1 id="no-small" style="text-align:center;">Drop a message</h1>
+	<div id="message-big" style="overflow:auto;margin-top: 10px;">
+		<div style="float: left;width: 40%;height: 35vh;background-image: url(wada2.jpg);margin-left: 10%;background-size: cover;background-position: center;border: 3px solid white;"></div>
+		<div style="float: left;width: 40%;height: 35vh; background-color: white;">
+			
+	<textarea style="width:80%;height: 80%;border-radius: 20px; margin-left: 10%; border: 2px solid;"></textarea><br>
+	<input style="width: 40%; font-size:4vh;border-radius: 20px;margin-left: 30%;" type="submit" name="send" value="send">
+		</div>
+	</div>
+
+	<div style="text-align:center; font-size: 4vh;padding: 10px;">
+	<div style="font-size:6vh;font-weight: bold;">Reach out to us</div>
+	<div>contact@mail.com</div>
+	<div>+234############</div>
+	<div>+234############</div>
+	<div>Campaign office, Jos</div>
+	</div>
+
+	<div id="socials">
+		<hr style="border: 4px solid; width: 80%;margin-left: 10%;margin-top: 10px;margin-bottom: 10px;border-radius: 20px;">
+		<div style="text-align:center;">
+		<img src="whats.svg">
+		<img src="insta.svg">
+		<img src="face.svg">
+		</div>
+		
+	</div>
+	<br>
+	<h3 style="text-align:center;">Copyright Wada2027 © 2025</h3>
+	<script type="text/javascript">
+		function drop()
+		{
+			document.getElementById('drop').style.display = 'block';
+		}
+		function fold()
+		{
+			document.getElementById('drop').style.display = 'none';
+		}
+	</script>
 	
 		
 </body>

@@ -12,7 +12,7 @@
 			box-sizing: border-box;
 			background-color: whitesmoke;
 			color: black;
-			font-family: Candara;
+			font-family: trebuchet ms,helvetica,monospace;
 		}
 		
 		@media (min-width: 600px)
@@ -169,6 +169,19 @@
 		a 
 		{
 			font-size: 4vh;
+			text-decoration: none;
+		}
+		.dropdown
+		{
+			text-align: center;
+		}
+		.dropdown
+		{
+			display: none;
+		}
+		#droplinks
+		{
+			font-size: 10vw;
 		}
 		#project-title
 		{
@@ -197,6 +210,7 @@
 			text-align: center;
 			padding: 3px;
 			font-size: 4vw;
+			font-weight: bold;
 		}
 		.about-image
 		{
@@ -213,17 +227,18 @@
 			text-align: center;
 			padding: 3px;
 			font-size: 4vw;
+			font-weight: bold;
 		}
 	</style>
 </head>
 <body>
 	<div class="nav-small">
 		<div class="nav-small-left">
-			<h1 style="margin-left: 5px;">WADA KAWU</h1>
+			<h1 style="margin-left: 5px;"><a href="index.html">WADA KAWU</a></h1>
 		</div>
 
 		<div class="nav-small-right">
-			<img src="MENU.PNG" height="50%">
+			<img id="open-dropdown" onclick="drop()" src="MENU.PNG" height="50%">
 		</div>
 	</div>
 
@@ -238,11 +253,19 @@
 		<a href="contact.html"> Contribute</a>
 		</div>
 	</div>
+	<div id="drop" class="dropdown">
+		<div><img onclick="fold()" src="close.png"></div>
+		<div><a id="droplinks" href="index.html">Home</a></div>
+		<div><a id="droplinks" href="about.html">about</a></div>
+		<div><a id="droplinks" href="projects.html">projects</a></div>
+		<div><a id="droplinks" href="contact.html">contact</a></div>
+	</div>
 	<div style="overflow: auto;">
 		<div id="a"></div>
 		<div id="p"></div>
 		<div id="c"></div>
 	</div>
+	
 	<div id="apc"></div>
 	
 	<h1 style="text-align: center;">About Wada</h1>
@@ -250,15 +273,35 @@
 		Wada Kawu is a visionary businessman and dedicated philanthropist with deep roots in the Jos North/Bassa Federal Constituency. With a track record of entrepreneurial success and a lifelong commitment to community development, he has empowered countless individuals through job creation, youth mentorship, and strategic investments in education and healthcare.
 	</div>
 	<div class="about-image">
-		<img src="about.jpg" width="80%" height="60%">
+		<img style="border-radius: 10px;" src="wada.jpg" width="80%" height="60%">
 	</div>
 	<div class="about-bot">
 		Driven by a passion for service, Wada has consistently used his resources to uplift the most vulnerable in society—supporting widows, funding scholarships, and initiating grassroots empowerment programs across Plateau State. His reputation for integrity, innovation, and inclusive leadership has earned him the trust of many within and beyond the business community.<br><br>
 
-Now stepping into public service, he is offering himself as a candidate for the House of Representatives with a clear vision: to bring effective representation, economic growth, and lasting peace to Jos North/Bassa. With his wealth of experience and unwavering commitment to the people, Wada Kawu is ready to be a voice for progress and unity at the national level.
-
+Now stepping into public service, he is offering himself as a candidate for the House of Representatives with a clear vision: to bring effective representation, economic growth, and lasting peace to Jos North/Bassa. With his wealth of experience and unwavering commitment to the people, Wada Kawu is ready to be a voice for progress and unity at the national level.<br><br>
+	<div id="socials">
+		<hr style="border: 4px solid; width: 80%;margin-left: 10%;margin-top: 10px;margin-bottom: 10px;border-radius: 20px;">
+		<div style="text-align:center;">
+		<img src="whats.svg">
+		<img src="insta.svg">
+		<img src="face.svg">
+		</div>
+		
+	</div>
+	<br>
 
 	</div>
-		
+
+	<h3 style="text-align:center;">Copyright Wada2027 © 2025</h3>
+		<script type="text/javascript">
+		function drop()
+		{
+			document.getElementById('drop').style.display = 'block';
+		}
+		function fold()
+		{
+			document.getElementById('drop').style.display = 'none';
+		}
+	</script>
 </body>
 </html>

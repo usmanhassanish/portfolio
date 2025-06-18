@@ -12,7 +12,8 @@
 			box-sizing: border-box;
 			background-color: whitesmoke;
 			color: black;
-			font-family: Candara;
+			text-decoration: none;
+			font-family: trebuchet ms,helvetica,monospace;
 		}
 		
 		@media (min-width: 600px)
@@ -45,9 +46,10 @@
 				display: none;
 			}
 		}
+
 		.nav-small
 		{
-			height: 10vh;
+			height: 7vh;
 			overflow: auto;
 		}
 		.nav-small-left
@@ -98,46 +100,50 @@
 		#a 
 		{
 			width: 30%;
-			height: 2vh;
+			height: 1vh;
 			float: left;
 			background-color: lightgreen;
 		}
 		#p
 		{
 			width: 40%;
-			height: 2vh;
+			height: 1vh;
 			float: left;
 			background-color: white;
 		}
 		#c 
 		{
 			width: 30%;
-			height: 2vh;
+			height: 1vh;
 			float: left;
 			background-color: lightskyblue;
 		}
 		#apc
 		{
 			width: 100%;
-			height: 1.5vh;
+			height: 1vh;
 			background-color: red;
 		}
 		.home-small
 		{
-			background-image: url('ws.jpg');
+			background-image: url('wada2.jpg');
 			background-size: cover;
 			background-position: center;
+			background-repeat: no-repeat;
+			background-color: white;
 			width: 80%;
 			margin-left: 10%;
 			margin-top: 20px;
-			height: 60vh;
+			height: 50vh;
 			border-radius: 10px;
 		}
 		.home-big
 		{
 			background-image: url('wb.jpg');
-			background-size: cover;
+			background-size: contain;
 			background-position: center;
+			background-repeat: no-repeat;
+			background-color: black;
 			width: 80%;
 			margin-left: 10%;
 			margin-top: 20px;
@@ -161,7 +167,9 @@
 			height: 15%;
 			background-color: white;
 			display: flex;
+			border:2px solid black;
 			justify-content: center;
+			
 			align-items: center;
 			font-size: 4vw;
 			font-weight: bold;
@@ -169,18 +177,42 @@
 		a 
 		{
 			font-size: 4vh;
+			text-decoration: none;
 		}
-
+		.dropdown
+		{
+			text-align: center;
+		}
+		.dropdown
+		{
+			display: none;
+		}
+		#droplinks
+		{
+			font-size: 10vw;
+		}
+		#projects-link
+		{
+			background-image: url('project.jpg');
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 5vh;
+			width: 80%;
+			margin-left: 10%;
+		}
 	</style>
 </head>
 <body>
 	<div class="nav-small">
 		<div class="nav-small-left">
-			<h1 style="margin-left: 5px;">WADA KAWU</h1>
+			<h1 style="margin-left: 5px;"><a href="index.html">WADA KAWU</a></h1>
 		</div>
 
 		<div class="nav-small-right">
-			<img src="MENU.PNG" height="50%">
+			<img id="open-dropdown" onclick="drop()" src="MENU.PNG" height="50%">
 		</div>
 	</div>
 
@@ -195,11 +227,19 @@
 		<a href="contact.html"> Contribute</a>
 		</div>
 	</div>
+	<div id="drop" class="dropdown">
+		<div><img onclick="fold()" src="close.png"></div>
+		<div><a id="droplinks" href="index.html">Home</a></div>
+		<div><a id="droplinks" href="about.html">about</a></div>
+		<div><a id="droplinks" href="projects.html">projects</a></div>
+		<div><a id="droplinks" href="contact.html">contact</a></div>
+	</div>
 	<div style="overflow: auto;">
 		<div id="a"></div>
 		<div id="p"></div>
 		<div id="c"></div>
 	</div>
+	
 	<div id="apc"></div>
 	<div class="home-small">
 		<div id="small-note">
@@ -213,16 +253,43 @@
 		</div>
 	</div>
 
-	<h2 id="vision-small" style="width:80%;margin-left: 10%; text-align: center; border: 2px solid white; padding:3px;margin-top: 20px;">Wada Kawu is a successful businessman and philanthropist with a proven record of empowering communities in Jos North/Bassa.
+	<h3 id="vision-small" style="width:90%;margin-left: 5%; text-align: justify; margin-top: 20px; border: 3px solid black; padding: 10px;">Wada Kawu is a successful businessman and philanthropist with a proven record of empowering communities in Jos North/Bassa.
 He has created jobs, supported education, and uplifted the vulnerable through impactful initiatives.
 A man of integrity, vision, and action, he understands the real needs of his people.
 His leadership blends experience, compassion, and results.
-He is the right man to represent Jos North/Bassa in the House of Representatives</h2>
+He is the right man to represent Jos North/Bassa in the House of Representatives</h3>
 
-<h1 id="vision-big" style="width:80%;margin-left: 10%; text-align: center; border: 2px solid white; padding:3px;margin-top: 20px;">Wada Kawu is a successful businessman and philanthropist with a proven record of empowering communities in Jos North/Bassa.
+<h1 id="vision-big" style="width:80%;margin-left: 10%; text-align: justify; margin-top: 20px;">Wada Kawu is a successful businessman and philanthropist with a proven record of empowering communities in Jos North/Bassa.
 He has created jobs, supported education, and uplifted the vulnerable through impactful initiatives.
 A man of integrity, vision, and action, he understands the real needs of his people.
 His leadership blends experience, compassion, and results.
 He is the right man to represent Jos North/Bassa in the House of Representatives</h1>
+
+<div id="projects-link">
+	<div style=" background-color:black;width: 60%;text-align: center;margin-top: 10px;margin-bottom: 10px;font-weight: bold;color: white;padding-top: 20px;padding-bottom: 20px;"><a style="color: white;background: black;" href="projects.html">Projects</a></div>
+</div>
+
+<div id="socials">
+		<hr style="border: 4px solid; width: 80%;margin-left: 10%;margin-top: 10px;margin-bottom: 10px;border-radius: 20px;">
+		<div style="text-align:center;">
+		<img src="whats.svg">
+		<img src="insta.svg">
+		<img src="face.svg">
+		</div>
+		
+	</div>
+	<br>
+	<h3 style="text-align:center;">Copyright Wada2027 © 2025</h3>
+
+	<script type="text/javascript">
+		function drop()
+		{
+			document.getElementById('drop').style.display = 'block';
+		}
+		function fold()
+		{
+			document.getElementById('drop').style.display = 'none';
+		}
+	</script>
 </body>
 </html>

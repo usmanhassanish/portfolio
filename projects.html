@@ -12,7 +12,7 @@
 			box-sizing: border-box;
 			background-color: whitesmoke;
 			color: black;
-			font-family: Candara;
+			font-family: trebuchet ms,helvetica,monospace;
 		}
 		
 		@media (min-width: 600px)
@@ -169,12 +169,26 @@
 		a 
 		{
 			font-size: 4vh;
+			text-decoration: none;
+		}
+		.dropdown
+		{
+			text-align: center;
+		}
+		.dropdown
+		{
+			display: none;
+		}
+		#droplinks
+		{
+			font-size: 10vw;
 		}
 		#project-title
 		{
-			font-size: 7vh;
+			font-size: 5vh;
 			font-weight: bold;
 			text-align: center;
+			margin-top: 10px;
 		}
 		#project 
 		{
@@ -189,17 +203,20 @@
 		{
 			padding: 5px;
 			font-size: 4vw;
+			font-weight: bold;
+			background-color: white;
+			border: 2px inset black;
 		}
 	</style>
 </head>
 <body>
 	<div class="nav-small">
 		<div class="nav-small-left">
-			<h1 style="margin-left: 5px;">WADA KAWU</h1>
+			<h1 style="margin-left: 5px;"><a href="index.html">WADA KAWU</a></h1>
 		</div>
 
 		<div class="nav-small-right">
-			<img src="MENU.PNG" height="50%">
+			<img id="open-dropdown" onclick="drop()" src="MENU.PNG" height="50%">
 		</div>
 	</div>
 
@@ -214,25 +231,72 @@
 		<a href="contact.html"> Contribute</a>
 		</div>
 	</div>
+	<div id="drop" class="dropdown">
+		<div><img onclick="fold()" src="close.png"></div>
+		<div><a id="droplinks" href="index.html">Home</a></div>
+		<div><a id="droplinks" href="about.html">about</a></div>
+		<div><a id="droplinks" href="projects.html">projects</a></div>
+		<div><a id="droplinks" href="contact.html">contact</a></div>
+	</div>
 	<div style="overflow: auto;">
 		<div id="a"></div>
 		<div id="p"></div>
 		<div id="c"></div>
 	</div>
+	
 	<div id="apc"></div>
 	
-	<div style="border: 3PX dashed white; width:80%;padding: 4PX;text-align: center;font-size: 4VH;margin-left: 10%; margin-top:20px;">THE PEOPLE'S ADVOCATE FOR JOS NORTH BASSA 2027</div>
+	<div style="border: 3PX dashed white; width:80%;padding: 4PX;text-align: center;font-size: 4VH;margin-left: 10%; margin-top:20px;background-color: white;border-radius: 5px;">THE PEOPLE'S ADVOCATE FOR JOS NORTH BASSA 2027</div>
 
 	<div id="project-title">PROJECTS</div>
 
 	<div id="project">
 		<div id="p-about">
-			Wada Kawu is a successful businessman and philanthropist with a proven record of empowering communities in Jos North/Bassa.
+			New Mosque in Jos North Community
 		</div>
 		<div id="p-image">
-			<img src="about.jpg" width="100%" height="auto">
+			<img src="mosque.jpg" width="100%" height="auto">
 		</div>
 	</div>
+
+	<div id="project">
+		<div id="p-about">
+			Ram Donation Eid-Fitr 2025
+		</div>
+		<div id="p-image">
+			<img src="eid1.jpg" width="100%" height="auto">
+		</div>
+	</div>
+
+	<div id="project">
+		<div id="p-about">
+			Cash Relief Eid-Fitr 2025
+		</div>
+		<div id="p-image">
+			<img src="eid2.jpg" width="100%" height="auto">
+		</div>
+	</div>
+
+	<div id="socials">
+		<hr style="border: 4px solid; width: 80%;margin-left: 10%;margin-top: 10px;margin-bottom: 10px;border-radius: 20px;">
+		<div style="text-align:center;">
+		<img src="whats.svg">
+		<img src="insta.svg">
+		<img src="face.svg">
+		</div>
 		
+	</div>
+	<br>
+	<h3 style="text-align:center;">Copyright Wada2027 © 2025</h3>
+		<script type="text/javascript">
+		function drop()
+		{
+			document.getElementById('drop').style.display = 'block';
+		}
+		function fold()
+		{
+			document.getElementById('drop').style.display = 'none';
+		}
+	</script>
 </body>
 </html>
