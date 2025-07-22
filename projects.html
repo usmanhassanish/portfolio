@@ -10,292 +10,267 @@
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
-			background-color: whitesmoke;
-			color: black;
-			font-family: trebuchet ms,helvetica,monospace;
+			font-family: trebuchet ms;
 		}
-		
-		@media (min-width: 600px)
+		@media (max-width: 750px)
+		{
+			.nav-big
+			{
+				display: none;
+			}
+			#home-image-big
+			{
+				display: none;
+			}
+			.project-big
+			{
+				display: none;
+			}
+			#bill-title
+		{
+			font-size: 9vw;
+			padding: 10px;
+		}
+		#bill-name
+		{
+			font-size: 7vw;
+			padding: 10px;
+		}
+		}
+		@media (min-width: 751px)
 		{
 			.nav-small
 			{
 				display: none;
 			}
-			.home-small
+			#home-image-small
 			{
 				display: none;
 			}
-			#vision-small
-			{
-				display: none;
-			}
-		}
-		@media (max-width: 599px)
+			#bill-title
 		{
-			#vision-big 
-			{
-				display: none;
-			}
-			.home-big
-			{
-				display: none;
-			}
-			.nav-big
-			{
-				display: none;
-			}
+			font-size: 7vw;
+				padding: 10px;
+		}
+		#bill-name
+		{
+			font-size: 5vw;
+			padding: 10px;
+		}
+		}
+		.nav-big
+		{
+			border: 3px solid; black;
+			width: 100%;
+			overflow: auto;
+			height: 18vh;
 		}
 		.nav-small
 		{
-			height: 10vh;
+			border: 3px solid; black;
+			width: 100%;
 			overflow: auto;
+			height: 18vh;
 		}
-		.nav-small-left
+		.small-left
 		{
-			width: 80%;
+			width: 40%;
 			height: 100%;
+			border: 2px solid black;
 			float: left;
-			display: flex;
-			align-items: center;
 		}
-		.nav-small-right
+		.small-right
+		{
+			width: 60%;
+			height: 100%;
+			border: 2px solid black;
+			float: left;
+		}
+		.small-right-top
+		{
+			width: 100%;
+			height: 45%;
+			border: 2px solid black;
+		}
+		.small-right-bot
+		{
+			width: 100%;
+			height: 55%;
+			border: 2px solid black;
+		}
+		.big-left
 		{
 			width: 20%;
 			height: 100%;
+			border: 2px solid black;
 			float: left;
-			
-			display: flex;
-			align-items: center;
-			justify-content: center;
 		}
-
-		.nav-big
+		.big-right
 		{
-			height: 12vh;
+			width: 80%;
+			height: 100%;
+			border: 2px solid black;
+			float: left;
+		}
+		.big-right-top
+		{
+			width: 100%;
+			height: 45%;
+			border: 2px solid black;
+		}
+		.big-right-bot
+		{
+			width: 100%;
+			height: 55%;
+			border: 2px solid black;
+		}
+		#project-image
+		{
+			width: 100%;
+			background-image: url('images/g.jpg');
+			background-position: center;
+			background-size: cover;
+			height: 20vh;
+		}
+		#project-title-left
+		{
+			float: left;
+			width: 25%;
+			height: 5vh;
+			display: flex;
+			justify-content: center;
+			border-right: 3px double black;
+			align-items: center;
+		}
+		#project-title-middle
+		{
+			float: left;
+			width: 50%;
+			height: 6vh;
+			font-size: 5vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#project-title-right
+		{
+			float: left;
+			border-left: 3px double black;
+			width: 25%;
+			height: 5vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.project-big 
+		{
 			overflow: auto;
+			margin-left: 10%;
+			width: 80%;
+			height: 50vh;
+			margin-top: 3vh;
+			border: 2px solid whitesmoke;
 		}
-		.nav-big-left
+		.project-big-left
 		{
-			width: 30%;
+			width: 50%;
+			height: 100%;
+			float: left;	
+		}
+		.project-big-right
+		{
+			width: 50%;
 			height: 100%;
 			float: left;
-		
-			display: flex;
-			align-items: center;
-			justify-content: center;
 		}
-		.nav-big-mid
-		{
-			width: 70%;
-			height: 100%;
-			float: left;
-			
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		
-		#a 
-		{
-			width: 30%;
-			height: 2vh;
-			float: left;
-			background-color: lightgreen;
-		}
-		#p
-		{
-			width: 40%;
-			height: 2vh;
-			float: left;
-			background-color: white;
-		}
-		#c 
-		{
-			width: 30%;
-			height: 2vh;
-			float: left;
-			background-color: lightskyblue;
-		}
-		#apc
+		.project-big-title
 		{
 			width: 100%;
-			height: 1.5vh;
-			background-color: red;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
-		.home-small
+		.project-big-about
 		{
-			background-image: url('ws.jpg');
-			background-size: cover;
-			background-position: center;
+			width: 100%;
+			height: 80%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.project-small
+		{
 			width: 80%;
 			margin-left: 10%;
-			margin-top: 20px;
-			height: 60vh;
-			border-radius: 10px;
+			height: 50vh;
+			border: 2px solid red;
 		}
-		.home-big
-		{
-			background-image: url('wb.jpg');
-			background-size: cover;
-			background-position: center;
-			width: 80%;
-			margin-left: 10%;
-			margin-top: 20px;
-			height: 60vh;
-			border-radius: 10px;
-		}
-		#small-note
-		{
-			width: 100%;
-			height: 10%;
-			background-color: white;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 6vw;
-			font-weight: bold;
-		}
-		#big-note
-		{
-			width: 100%;
-			height: 15%;
-			background-color: white;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 4vw;
-			font-weight: bold;
-		}
-		a 
-		{
-			font-size: 4vh;
-			text-decoration: none;
-		}
-		.dropdown
-		{
-			text-align: center;
-		}
-		.dropdown
+		#on-hover
 		{
 			display: none;
-		}
-		#droplinks
-		{
-			font-size: 10vw;
-		}
-		#project-title
-		{
-			font-size: 5vh;
-			font-weight: bold;
-			text-align: center;
-			margin-top: 10px;
-		}
-		#project 
-		{
-			width: 80%;
-			margin-left: 10%;
-			margin-top: 20px;
-			background-color: white;
-			border: 5px dashed white;
-			text-align: center;
-		}
-		#p-about 
-		{
-			padding: 5px;
-			font-size: 4vw;
-			font-weight: bold;
-			background-color: white;
-			border: 2px inset black;
 		}
 	</style>
 </head>
 <body>
-	<div class="nav-small">
-		<div class="nav-small-left">
-			<h1 style="margin-left: 5px;"><a href="index.html">WADA KAWU</a></h1>
-		</div>
-
-		<div class="nav-small-right">
-			<img id="open-dropdown" onclick="drop()" src="MENU.PNG" height="50%">
-		</div>
-	</div>
-
+	<!-- NAVIGATION -->
 	<div class="nav-big">
-		<div class="nav-big-left">
-			<div style="font-size: 4vh;font-weight: bold;"><a href="index.html">WADA KAWU</a></div>
-		</div>
-
-		<div class="nav-big-mid">
-		<a href="about.html">About | </a>
-		<a href="projects.html"> Projects | </a>
-		<a href="contact.html"> Contribute</a>
-		</div>
-	</div>
-	<div id="drop" class="dropdown">
-		<div><img onclick="fold()" src="close.png"></div>
-		<div><a id="droplinks" href="index.html">Home</a></div>
-		<div><a id="droplinks" href="about.html">about</a></div>
-		<div><a id="droplinks" href="projects.html">projects</a></div>
-		<div><a id="droplinks" href="contact.html">contact</a></div>
-	</div>
-	<div style="overflow: auto;">
-		<div id="a"></div>
-		<div id="p"></div>
-		<div id="c"></div>
-	</div>
-	
-	<div id="apc"></div>
-	
-	<div style="border: 3PX dashed white; width:80%;padding: 4PX;text-align: center;font-size: 4VH;margin-left: 10%; margin-top:20px;background-color: white;border-radius: 5px;">THE PEOPLE'S ADVOCATE FOR JOS NORTH BASSA 2027</div>
-
-	<div id="project-title">PROJECTS</div>
-
-	<div id="project">
-		<div id="p-about">
-			New Mosque in Jos North Community
-		</div>
-		<div id="p-image">
-			<img src="mosque.jpg" width="100%" height="auto">
-		</div>
-	</div>
-
-	<div id="project">
-		<div id="p-about">
-			Ram Donation Eid-Fitr 2025
-		</div>
-		<div id="p-image">
-			<img src="eid1.jpg" width="100%" height="auto">
-		</div>
-	</div>
-
-	<div id="project">
-		<div id="p-about">
-			Cash Relief Eid-Fitr 2025
-		</div>
-		<div id="p-image">
-			<img src="eid2.jpg" width="100%" height="auto">
-		</div>
-	</div>
-
-	<div id="socials">
-		<hr style="border: 4px solid; width: 80%;margin-left: 10%;margin-top: 10px;margin-bottom: 10px;border-radius: 20px;">
-		<div style="text-align:center;">
-		<img src="whats.svg">
-		<img src="insta.svg">
-		<img src="face.svg">
-		</div>
+		<div class="big-left">
 		
 	</div>
-	<br>
-	<h3 style="text-align:center;">Copyright Wada2027 © 2025</h3>
-		<script type="text/javascript">
-		function drop()
+	<div class="big-right">
+		<div class="big-right-top"></div>
+		<div class="big-right-bot"></div>
+	</div>	
+		
+	</div>
+	<div class="nav-small">
+	<div class="small-left">
+		
+	</div>
+	<div class="small-right">
+		<div class="small-right-top"></div>
+		<div class="small-right-bot"></div>
+	</div>	
+	</div>
+
+	<!-- PROJECT-IMAGE -->
+	<div id="project-image">
+		
+	</div>
+	
+	<div style="overflow: auto;">
+		<div id="project-title-left">
+		<hr style="border: 2px solid black;width: 100%;">
+		</div>
+		<div id="project-title-middle">
+			PROJECTS
+		</div>
+		<div id="project-title-right">
+		<hr style="border: 2px solid black;width: 100%;">
+		</div>
+	</div>
+
+	<div class="project-big">
+		<div class="project-big-left" style="background-image: url('images/a.jpg');background-position: center;background-size: cover;">
+			
+		</div>
+
+		<div class="project-big-right">
+			<div class="project-big-title"></div>
+			<div class="project-big-about"></div>
+		</div>
+	</div>
+
+	<div class="project-small" onmouseup="show()">
+		<div id="main-content">dsnnjkdnsks</div>
+		<div id="on-hover">###########</div>
+	</div>
+
+	<script type="text/javascript">
+		function show()
 		{
-			document.getElementById('drop').style.display = 'block';
-		}
-		function fold()
-		{
-			document.getElementById('drop').style.display = 'none';
+			document.getElementbyId('on-hover').set.dislpay = 'block';
 		}
 	</script>
 </body>
