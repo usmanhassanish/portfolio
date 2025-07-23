@@ -78,7 +78,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background-color: whitesmoke;
 			border: 5px solid white;
 			float: left;
 			font-size: 1.5rem;
@@ -166,7 +165,7 @@
 		#bills
 		{
 			background-color: #00468B;
-			color: red;
+			color: white;
 			border: 4px solid white;
 			width: 70%;
 			word-break: break-word;
@@ -182,6 +181,18 @@
 		{
 /*			margin-left: 4vw;*/
 		}
+		#menu-bar
+		{
+			display: none;
+			text-align: center;
+		}
+		#page-links
+		{
+			text-decoration: none;
+			color: #00468B;
+			font-size: 4vh;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>
@@ -195,11 +206,14 @@
 		</div>
 	<div class="big-right">
 		<div class="big-right-top">
-			<div style="margin-right: 3vw;"><img src="assets/insta.png"> <img src="assets/face.png" > <img src="assets/x.png"></div>
+			<div style="margin-right: 3vw;"><img style="margin-left: 2vw;" src="assets/insta.png"> <img style="margin-left: 2vw;" src="assets/face.png" > <img style="margin-left: 2vw;" src="assets/x.png"></div>
 		</div>
 		<div class="big-right-bot">
 			
-			<img style="margin-right: 3vw;" src="assets/menu2.png">
+			<a id="page-links" href="index.html">| Home |</a> 
+			<a id="page-links" href="index.html"> About Gagdi |</a> 
+			<a id="page-links" href="index.html"> Projects |</a> 
+			<a id="page-links" href="index.html"> Contact |</a> 
 		</div>
 	</div>	
 		
@@ -213,16 +227,24 @@
 	</div>
 	<div class="small-right">
 		<div class="small-right-top">
-			<div style="margin-right: 3vw;"><img src="assets/insta.png"> <img src="assets/face.png" > <img src="assets/x.png"></div>
+			<div style="margin-right: 3vw;"><img style="margin-left: 2vw;" src="assets/insta.png"> <img style="margin-left: 2vw;" src="assets/face.png" > <img style="margin-left: 2vw;" src="assets/x.png"></div>
 		</div>
 		<div class="small-right-bot">
 			<div> 
-			<img style="margin-right: 3vw;" src="assets/menu1.png">
+			<img onclick="drop()" style="margin-right: 3vw;" src="assets/menu1.png">
 			</div>
 		</div>
 	</div>	
 	</div>
+		<div id="menu-bar">
+			<img onclick="lock()" src="assets/close-small.png">
+			<div><a id="page-links" href="index.html">| Home |</a> </div>
+			<div><a id="page-links" href="index.html">| About Gagdi |</a> </div>
+			<div><a id="page-links" href="index.html">| Projects |</a> </div>
+			<div><a id="page-links" href="index.html">| Contact |</a> </div>
 
+			
+		</div>
 	<!-- HOME-IMAGE -->
 	<div id="home-image-small">
 		
@@ -240,5 +262,17 @@
 		<div id="bill-name">################</div>
 		<div id="bill-name">################</div>
 	</div>
+
+	<script type="text/javascript">
+		function drop()
+		{
+			document.getElementById('menu-bar').style.display = 'block';
+		}
+
+		function lock()
+		{
+			document.getElementById('menu-bar').style.display = 'none';
+		}
+	</script>
 </body>
 </html>
