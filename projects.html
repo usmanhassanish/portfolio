@@ -18,24 +18,20 @@
 			{
 				display: none;
 			}
-			#home-image-big
+			.message-big
 			{
 				display: none;
 			}
-			.project-big
+			#mid-heading
 			{
-				display: none;
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			font-size: 3.3vw;
+			font-weight: bold;
+			color: #00468B;;
 			}
-			#bill-title
-		{
-			font-size: 9vw;
-			padding: 10px;
-		}
-		#bill-name
-		{
-			font-size: 7vw;
-			padding: 10px;
-		}
+		
 		}
 		@media (min-width: 751px)
 		{
@@ -43,235 +39,393 @@
 			{
 				display: none;
 			}
-			#home-image-small
+			.message-small
 			{
 				display: none;
 			}
-			#bill-title
-		{
-			font-size: 7vw;
-				padding: 10px;
-		}
-		#bill-name
-		{
-			font-size: 5vw;
-			padding: 10px;
-		}
+			#mid-heading
+			{
+			width: 95%;
+			margin: auto;
+			text-align: center;
+			font-size: 3.3vw;
+			font-weight: bold;
+			color: #00468B;;
+			}
+			
+			
 		}
 		.nav-big
 		{
-			border: 3px solid; black;
+			
 			width: 100%;
 			overflow: auto;
 			height: 18vh;
+			color: #00468B;
 		}
 		.nav-small
 		{
-			border: 3px solid; black;
+			
 			width: 100%;
+			padding-top: 5px;
 			overflow: auto;
-			height: 18vh;
+			height: 12vh;
+			color: #00468B;
 		}
 		.small-left
 		{
 			width: 40%;
 			height: 100%;
-			border: 2px solid black;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 5px solid white;
 			float: left;
+			font-size: 1.5rem;
+			font-weight: bold;
 		}
 		.small-right
 		{
 			width: 60%;
 			height: 100%;
-			border: 2px solid black;
 			float: left;
 		}
 		.small-right-top
 		{
 			width: 100%;
 			height: 45%;
-			border: 2px solid black;
+			display: flex;
+			align-items: center;
+			justify-content: right;
 		}
 		.small-right-bot
 		{
 			width: 100%;
 			height: 55%;
-			border: 2px solid black;
+			display: flex;
+			align-items: center;
+			justify-content: right;	
 		}
 		.big-left
 		{
 			width: 20%;
 			height: 100%;
-			border: 2px solid black;
+			
 			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 3vw
 		}
 		.big-right
 		{
 			width: 80%;
 			height: 100%;
-			border: 2px solid black;
+			
 			float: left;
 		}
 		.big-right-top
 		{
 			width: 100%;
 			height: 45%;
-			border: 2px solid black;
+			display: flex;
+			justify-content: right;
+			align-items: center;
+			
 		}
 		.big-right-bot
 		{
 			width: 100%;
 			height: 55%;
-			border: 2px solid black;
+			display: flex;
+			align-items: center;
+			justify-content: right;
+			
+		}
+		hr
+		{
+			border: 1.5px solid #00468B;
+		}
+		.logo-small
+		{
+/*			margin-left: 4vw;*/
+		}
+		#menu-bar
+		{
+			display: none;
+			text-align: center;
+		}
+		#page-links
+		{
+			text-decoration: none;
+			color: #00468B;
+			font-size: 4vh;
+			font-weight: bold;
+		}
+		#pankshin
+		{
+			width: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #00468B;
+			border: 2px solid whitesmoke;
+			border-bottom-left-radius: 20px;
+			border-top-left-radius: 20px;
+
+			color: white;
+			float: left;
+		}
+		#kanke
+		{
+			width: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #00468B;
+			border: 2px solid whitesmoke;
+			color: white;
+			float: left;
+		}
+		#kanam
+		{
+			width: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #00468B;
+			color: white;
+			border: 2px solid whitesmoke;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+			float: left;
 		}
 		#project-image
 		{
-			width: 100%;
-			background-image: url('images/g.jpg');
+			background-image: url('images/aa.jpg');
 			background-position: center;
 			background-size: cover;
-			height: 20vh;
-		}
-		#project-title-left
-		{
-			float: left;
-			width: 25%;
-			height: 5vh;
+			height: 25vh;
 			display: flex;
-			justify-content: center;
-			border-right: 3px double black;
 			align-items: center;
-		}
-		#project-title-middle
-		{
-			float: left;
-			width: 50%;
-			height: 6vh;
-			font-size: 5vh;
-			display: flex;
 			justify-content: center;
-			align-items: center;
 		}
-		#project-title-right
+		#kanam-projects
 		{
-			float: left;
-			border-left: 3px double black;
-			width: 25%;
-			height: 5vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			display: block;
+			text-align: center;
+			font-size: 1.3rem;
 		}
-		.project-big 
-		{
-			overflow: auto;
-			margin-left: 10%;
-			width: 80%;
-			height: 50vh;
-			margin-top: 3vh;
-			border: 2px solid whitesmoke;
-		}
-		.project-big-left
-		{
-			width: 50%;
-			height: 100%;
-			float: left;	
-		}
-		.project-big-right
-		{
-			width: 50%;
-			height: 100%;
-			float: left;
-		}
-		.project-big-title
-		{
-			width: 100%;
-			height: 20%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.project-big-about
-		{
-			width: 100%;
-			height: 80%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.project-small
-		{
-			width: 80%;
-			margin-left: 10%;
-			height: 50vh;
-			border: 2px solid red;
-		}
-		#on-hover
+		#pankshin-projects
 		{
 			display: none;
+			text-align: center;
+			font-size: 1.3rem;
+		}
+		#kanke-projects
+		{
+			display: none;
+			text-align: center;
+			font-size: 1.3rem;
+		}
+		#project-info1
+		{
+			display: block;
+		}
+		#project-images1
+		{
+			display: none;
+		}
+		#project-info2
+		{
+			display: block;
+		}
+		#project-images2
+		{
+			display: none;
+		}
+		#project-info3
+		{
+			display: block;
+		}
+		#project-images3
+		{
+			display: none;
+		}
+		#p-title
+		{
+			width: 80%;
+			background-color: whitesmoke;
+			color:#00468B;
+			margin-left: 10%;
+			margin-top: 4vh;
+			border: 2px solid white;
+		}
+		#p-about
+		{
+			width: 80%;
+			background-color: whitesmoke;
+			color: #00468B;
+			margin: auto;
+			border: 2px solid white;
+		}
+		#see-pictures
+		{
+			background-color: #00468B;
+			color: whitesmoke;
+			margin: auto;
+			width: 80%;
+			border: 2px solid white;
 		}
 	</style>
 </head>
 <body>
-	<!-- NAVIGATION -->
+		<!-- NAVIGATION -->
 	<div class="nav-big">
 		<div class="big-left">
-		
-	</div>
+		<div class="logo-big">
+			<div>YUSUF</div><hr>
+			<div>GAGDI</div>
+		</div>
+		</div>
 	<div class="big-right">
-		<div class="big-right-top"></div>
-		<div class="big-right-bot"></div>
+		<div class="big-right-top">
+			<div style="margin-right: 3vw;"><img style="margin-left: 2vw;" src="assets/insta.png"> <img style="margin-left: 2vw;" src="assets/face.png" > <img style="margin-left: 2vw;" src="assets/x.png"></div>
+		</div>
+		<div class="big-right-bot">
+			
+			<a id="page-links" href="index.html">| Home |</a> 
+			<a id="page-links" href="index.html"> About Gagdi |</a> 
+			<a id="page-links" href="projects.html"> Projects |</a> 
+			<a id="page-links" href="contact.html"> Contact |</a> 
+		</div>
 	</div>	
 		
 	</div>
 	<div class="nav-small">
 	<div class="small-left">
-		
+		<div class="logo-small">
+			<div>YUSUF</div><hr>
+			<div>GAGDI</div>
+		</div>
 	</div>
 	<div class="small-right">
-		<div class="small-right-top"></div>
-		<div class="small-right-bot"></div>
+		<div class="small-right-top">
+			<div style="margin-right: 3vw;"><img style="margin-left: 2vw;" src="assets/insta.png"> <img style="margin-left: 2vw;" src="assets/face.png" > <img style="margin-left: 2vw;" src="assets/x.png"></div>
+		</div>
+		<div class="small-right-bot">
+			<div> 
+			<img onclick="drop()" style="margin-right: 3vw;" src="assets/menu1.png">
+			</div>
+		</div>
 	</div>	
 	</div>
+		<div id="menu-bar">
+			<img onclick="lock()" src="assets/close-small.png">
+			<div><a id="page-links" href="index.html">| Home |</a> </div>
+			<div><a id="page-links" href="index.html">| About Gagdi |</a> </div>
+			<div><a id="page-links" href="projects.html">| Projects |</a> </div>
+			<div><a id="page-links" href="contact.html">| Contact |</a> </div>
+		</div>
 
-	<!-- PROJECT-IMAGE -->
-	<div id="project-image">
+		<div id="project-image">
+			<div style="background-color: white;font-size: 5vw;padding: 5px;">PROJECTS</div>
+		</div>
+
+		<div style="width:90%;margin-left: 5%;overflow: auto;margin-top: 3vh;font-size: 4vw;font-weight: bold;">
+			<div id="pankshin" onclick="pankshin()">Pankshin</div>
+			<div id="kanke" onclick="kanke()">Kanke</div>
+			<div id="kanam" onclick="kanam()">Kanam</div>
+		</div>
+
+		<!-- Pankshin Projects Section -->
+<div id="pankshin-projects">
+    <div id="project-info1">
+        <div id="p-title">Borehole</div>
+        <div id="p-about">Gagdi is on a mission to make sure every polling unit has access to drinking water...</div>
+        <div id="see-pictures" onclick="showPictures('1')">see pictures</div>
+    </div>
+    <div id="project-images1">
+        <div onclick="showInfo('1')"><img src="assets/close-small.png"></div>
+        <img src="images/q.jpg" width="80%" height="auto">
+        <img src="images/r.jpg" width="80%" height="auto">
+        <img src="images/s.jpg" width="80%" height="auto">
+        <div onclick="showInfo('1')"><a style="color: #00468B;text-decoration: underline;">Go Back</a></div>
+    </div>
+</div>
+
+<!-- Kanke Projects Section -->
+<div id="kanke-projects">
+    <div id="project-info2">
+        <div id="p-title">Borehole</div>
+        <div id="p-about">Gagdi is on a mission to make sure every polling unit has access to drinking water...</div>
+        <div id="see-pictures" onclick="showPictures('2')">see pictures</div>
+    </div>
+    <div id="project-images2">
+        <div onclick="showInfo('2')"><img src="assets/close-small.png"></div>
+        <img src="images/q.jpg" width="80%" height="auto">
+        <img src="images/r.jpg" width="80%" height="auto">
+        <img src="images/s.jpg" width="80%" height="auto">
+        <div onclick="showInfo('2')"><a style="color: #00468B;text-decoration: underline;">Go Back</a></div>
+    </div>
+</div>
+
+<!-- Kanam Projects Section -->
+<div id="kanam-projects">
+    <div id="project-info3">
+        <div id="p-title">Borehole</div>
+        <div id="p-about">Gagdi is on a mission to make sure every polling unit has access to drinking water...</div>
+        <div id="see-pictures" onclick="showPictures('3')">see pictures</div>
+    </div>
+    <div id="project-images3">
+        <div onclick="showInfo('3')"><img src="assets/close-small.png"></div>
+        <img src="images/q.jpg" width="80%" height="auto">
+        <img src="images/r.jpg" width="80%" height="auto">
+        <img src="images/s.jpg" width="80%" height="auto">
+        <div onclick="showInfo('3')"><a style="color: #00468B;text-decoration: underline;">Go Back</a></div>
+    </div>
+</div>
 		
-	</div>
-	
-	<div style="overflow: auto;">
-		<div id="project-title-left">
-		<hr style="border: 2px solid black;width: 100%;">
-		</div>
-		<div id="project-title-middle">
-			PROJECTS
-		</div>
-		<div id="project-title-right">
-		<hr style="border: 2px solid black;width: 100%;">
-		</div>
-	</div>
-
-	<div class="project-big">
-		<div class="project-big-left" style="background-image: url('images/a.jpg');background-position: center;background-size: cover;">
-			
-		</div>
-
-		<div class="project-big-right">
-			<div class="project-big-title"></div>
-			<div class="project-big-about"></div>
-		</div>
-	</div>
-
-	<div class="project-small" onmouseup="show()">
-		<div id="main-content">dsnnjkdnsks</div>
-		<div id="on-hover">###########</div>
-	</div>
 
 	<script type="text/javascript">
-		function show()
-		{
-			document.getElementbyId('on-hover').set.dislpay = 'block';
-		}
-	</script>
+    // Mobile menu functions
+    function drop() {
+        document.getElementById('menu-bar').style.display = 'block';
+    }
+
+    function lock() {
+        document.getElementById('menu-bar').style.display = 'none';
+    }
+
+    // Project section switcher functions
+    function pankshin() {
+        document.getElementById('pankshin-projects').style.display = 'block';
+        document.getElementById('kanke-projects').style.display = 'none';
+        document.getElementById('kanam-projects').style.display = 'none';
+    }
+
+    function kanke() {
+        document.getElementById('pankshin-projects').style.display = 'none';
+        document.getElementById('kanke-projects').style.display = 'block';
+        document.getElementById('kanam-projects').style.display = 'none';
+    }
+
+    function kanam() {
+        document.getElementById('pankshin-projects').style.display = 'none';
+        document.getElementById('kanke-projects').style.display = 'none';
+        document.getElementById('kanam-projects').style.display = 'block';
+    }
+
+    // Show/hide pictures for specific sections
+    function showInfo(sectionNum) {
+        document.getElementById('project-info' + sectionNum).style.display = 'block';
+        document.getElementById('project-images' + sectionNum).style.display = 'none';
+    }
+
+    function showPictures(sectionNum) {
+        document.getElementById('project-info' + sectionNum).style.display = 'none';
+        document.getElementById('project-images' + sectionNum).style.display = 'block';
+    }
+</script>
 </body>
 </html>
